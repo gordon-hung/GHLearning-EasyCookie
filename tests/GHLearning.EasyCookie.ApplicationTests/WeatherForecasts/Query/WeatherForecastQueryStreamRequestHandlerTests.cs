@@ -26,5 +26,11 @@ public class WeatherForecastQueryStreamRequestHandlerTests
 		// Assert
 		Assert.NotNull(result);
 		Assert.Equal(request.Count, result.Length);
+		foreach (var forecast in result)
+		{
+			Assert.NotEqual(default, forecast.Date);
+			Assert.InRange(forecast.TemperatureC, -20, 55);
+			Assert.Contains(forecast.Summary, WeatherForecastSummary.Summaries);
+		}
 	}
 }
