@@ -191,7 +191,7 @@ public class AccountRepositoryTests
 		await fakeDatabase.Received(1).StringSetAsync(
 			key: Arg.Is<RedisKey>(key),
 			value: Arg.Is<RedisValue>("testuser"),
-			expiry: Arg.Is<TimeSpan>(t => t.TotalDays == 30),
+			expiry: Arg.Is<TimeSpan>(t => t.TotalDays == 1),
 			flags: Arg.Any<CommandFlags>());
 	}
 	[Fact]
