@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CorrelationId" Version="3.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.3.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.6" />
+		<PackageReference Include="SequentialGuid" Version="4.0.6" />
+		<PackageReference Include="StackExchange.Redis" Version="2.8.41" />
+		<PackageReference Include="System.Linq.Async" Version="6.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\GHLearning.EasyCookie.Application\GHLearning.EasyCookie.Application.csproj" />
+		<ProjectReference Include="..\GHLearning.EasyCookie.Core\GHLearning.EasyCookie.Core.csproj" />
+		<ProjectReference Include="..\GHLearning.EasyCookie.SharedKernel\GHLearning.EasyCookie.SharedKernel.csproj" />
+	</ItemGroup>
+
+</Project>

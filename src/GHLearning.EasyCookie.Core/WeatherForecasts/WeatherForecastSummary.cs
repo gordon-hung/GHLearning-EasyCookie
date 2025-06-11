@@ -1,0 +1,8 @@
+﻿namespace GHLearning.EasyCookie.Core.WeatherForecasts;
+public class WeatherForecastSummary
+{
+	public static readonly string[] Summaries =
+	[
+		"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+	];
+}
